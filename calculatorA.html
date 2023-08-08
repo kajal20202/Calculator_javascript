@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cal {
+        height: 80vh;
+        width: 40%;
+        background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+        border-radius: 1rem;
+
+    }
+</style>
+<script>
+    function add() {
+        var a, b, ans;
+        a = parseInt(document.getElementById("x").value);
+        b = parseInt(document.getElementById("y").value);
+        ans = document.getElementById("z").value = a + b;
+    }
+    function add1() {
+        var a1, b1, ans;
+        a1 = parseInt(document.getElementById("p").value);
+        b1 = parseInt(document.getElementById("q").value);
+        ans1 = document.getElementById("r").value = a1 - b1;
+    }
+
+    function add2() {
+        var a2, b2, ans;
+        a2 = parseInt(document.getElementById("m").value);
+        b2 = parseInt(document.getElementById("n").value);
+        ans2 = document.getElementById("c").value = a2 * b2;
+    }
+
+
+    function add3() {
+        var a3, b3, ans;
+        a3 = parseInt(document.getElementById("w").value);
+        b3 = parseInt(document.getElementById("v").value);
+        ans3 = document.getElementById("t").value = a3 / b3;
+    }
+
+</script>
+
+<body>
+    <div style="margin-left: 19rem;" class="cal">
+
+        <div style="margin-left: 2.5rem; padding-top: 2rem;" class="data">
+            <h1 style="text-align: center;">Calculator</h1>
+
+            <input style="width: 50px; " type="text" id="x" placeholder=""> +
+            <input style="width: 50px;" type="text" id="y" placeholder="">
+            <button style="background-color:bisque; margin-left: 3rem;" onclick="add()">ans</button> =
+            <input style="width: 70px;" type="text" id="z" placeholder="calculate">
+        </div>
+
+        <div style="margin-left: 2.5rem; padding-top: 2rem;" class="data">
+
+            <input style="width: 50px; " type="text" id="p" placeholder=""> -
+            <input style="width: 50px;" type="text" id="q" placeholder="">
+            <button style="background-color:bisque; margin-left: 3rem;" onclick="add1()">ans</button> =
+            <input style="width: 70px;" type="text" id="r" placeholder="calculate">
+        </div>
+
+        <div style="margin-left: 2.5rem; padding-top: 2rem;" class="data">
+
+            <input style="width: 50px; " type="text" id="m" placeholder=""> *
+            <input style="width: 50px;" type="text" id="n" placeholder="">
+            <button style="background-color:bisque; margin-left: 3rem;" onclick="add2()">ans</button> =
+            <input style="width: 70px;" type="text" id="c" placeholder="calculate">
+        </div>
+
+        <div style="margin-left: 2.5rem; padding-top: 2rem;" class="data">
+
+            <input style="width: 50px; " type="text" id="w" placeholder=""> /
+            <input style="width: 50px;" type="text" id="v" placeholder="">
+            <button style="background-color:bisque; margin-left: 3rem;" onclick="add3()">ans</button> =
+            <input style="width: 70px;" type="text" id="t" placeholder="calculate">
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
